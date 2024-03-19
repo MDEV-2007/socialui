@@ -1,0 +1,220 @@
+body {
+  font-family: cursive;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.navbar .top-navbar {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .top-navbar .logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #F59690;
+  font-weight: 900;
+  
+}
+
+.navbar .top-navbar .search {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+.navbar .top-navbar .search button {
+  background-color: #fff;
+  border: none;
+  color: black;
+}
+.navbar .top-navbar .search input[type="text"] {
+  width: 400px;
+  color: black;
+  padding: 5px;
+  margin-left: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  border: none;
+  font-family: cursive;
+}
+
+.navbar .top-navbar .auth {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar .top-navbar .auth a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+  color: black;
+}
+
+.navbar .top-navbar .profile-badge img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.navbar .top-navbar .notification {
+  position: relative;
+  font-size: 24px;
+}
+
+.navbar .top-navbar .notification .badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 6px;
+  font-size: 0.8rem;
+}
+
+.navbar .top-navbar .message {
+  position: relative;
+  font-size: 24px;
+}
+
+.navbar .top-navbar .message .badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 6px;
+  font-size: 0.8rem;
+}
+
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .sidebar {
+    flex: 1 1 200px; 
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+
+  .content {
+    flex: 2 1 50%;
+    background-color: #e9e9e9;
+    padding: 20px;
+  }
+
+  .friends {
+    flex: 1 1 200px;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+
+  .sidebar ul {
+    transition: 1.5s linear;
+    line-height: 49px;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .sidebar ul li:hover {
+    background-color: #F59690;
+    border-start-end-radius: 10px;
+    padding-left: 20px;
+  }
+
+  .sidebar li {
+    padding: 10px 0;
+    color: black;
+  }
+
+  .sidebar li i {
+    margin-right: 10px;
+    font-size: 15px
+  }
+
+  .sidebar li a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #333;
+  }
+
+  @media (max-width: 768px) {
+    .section {
+      flex-direction: column;
+    }
+
+    .sidebar, .friends {
+      flex-basis: 100%; 
+    }
+  }
+.section .all-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.section .all-card .card .image img {
+    width: 230px;
+    height: 230px;
+    overflow: hidden;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.section .all-card .card .title {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.section .all-card .card .desc{
+    font-size: 10px;
+}
+
+.section .content .header h1{
+    padding-left: 70px;
+    font-weight: 900;
+}
+
+.section .frinds-description .friend-image img {
+    width:  60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.section .frinds-description {
+    margin-top: 10px;
+    line-height: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+.section .frinds-description .friend-username p{
+    cursor: pointer;
+}
+
+.section .frinds-description .friend-username .job {
+    font-size: 10px
+}
+
+.section .header01 h1 {
+    padding-left: 30px;
+    color: #F59690;
+}
